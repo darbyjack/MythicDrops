@@ -1,13 +1,7 @@
----
-id: language_yml
-title: language.yml
----
+# language.yml
 
-## Configuration
-
-MythicDrops has a lot of configuration options. Below is the contents of the
-language.yml. Most of the options are just used for various command outputs
-and the names of the keys are fairly self explanatory.
+MythicDrops has a lot of configuration options. Below is the contents of the language.yml. Most of the options are just
+used for various command outputs and the names of the keys are fairly self explanatory.
 
 There are a couple of explanations below, but most options are self-explanatory.
 

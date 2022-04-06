@@ -1,12 +1,7 @@
----
-id: relation_yml
-title: relation.yml
----
+# relation.yml
 
-## Configuration
-
-MythicDrops has a lot of configuration options. Below is the contents of the
-relation.yml with inline explanations of what each configuration option does.
+MythicDrops has a lot of configuration options. Below is the contents of the relation.yml with inline explanations of
+what each configuration option does.
 
 ```yaml
 version: "1.0.0"
