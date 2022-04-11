@@ -1,12 +1,7 @@
----
-id: socketGems_yml
-title: socketGems.yml
----
+# socketGems.yml
 
-## Configuration
-
-MythicDrops has a lot of configuration options. Below is the shortened contents of the
-socketGems.yml with inline explanations of what each configuration option does.
+MythicDrops has a lot of configuration options. Below is the shortened contents of the socketGems.yml with inline
+explanations of what each configuration option does.
 
 ```yaml
 version: 5.3.0

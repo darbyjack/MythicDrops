@@ -1,12 +1,7 @@
----
-id: creatureSpawning_yml
-title: creatureSpawning.yml
----
+# creatureSpawning.yml
 
-## Configuration
-
-MythicDrops has a lot of configuration options. Below is the contents of the
-creatureSpawning.yml with inline explanations of what each configuration option does.
+MythicDrops has a lot of configuration options. Below is the contents of the creatureSpawning.yml with inline
+explanations of what each configuration option does.
 
 ```yaml
 version: 5.1.0

@@ -1,12 +1,7 @@
----
-id: customItems_yml
-title: customItems.yml
----
+# customItems.yml
 
-## Configuration
-
-MythicDrops has a lot of configuration options. Below is the contents of the
-customItems.yml with inline explanations of what each configuration option does.
+MythicDrops has a lot of configuration options. Below is the contents of the customItems.yml with inline explanations of
+what each configuration option does.
 
 ```yaml
 version: 5.4.0
