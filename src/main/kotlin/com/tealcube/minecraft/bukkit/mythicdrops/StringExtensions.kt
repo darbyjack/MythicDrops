@@ -55,9 +55,10 @@ internal fun String.unChatColorize(): String = this.replace(ChatColor.COLOR_CHAR
     it.value.replace("&x", "#").replace("&", "")
 }
 
-internal fun String.firstChatColors(): String = hexOrOldRegex.find(this.unChatColorize())?.value ?: ""
+internal fun String.firstChatColors(): String = hexOrOldRegex.find(this.unChatColorize())?.value?.chatColorize() ?: ""
 
-internal fun String.stripColors(): String = ChatColor.stripColor(this)!! // using double bangs because `this` cannot be null
+// using double bangs because `this` cannot be null
+internal fun String.stripColors(): String = ChatColor.stripColor(this)!!
 
 internal fun String.startsWithAny(list: List<String>, ignoreCase: Boolean = false): Boolean {
     for (str in list) {

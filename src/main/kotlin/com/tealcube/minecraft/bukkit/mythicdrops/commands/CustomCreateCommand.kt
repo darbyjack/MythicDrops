@@ -34,7 +34,6 @@ import com.tealcube.minecraft.bukkit.mythicdrops.hdb.HeadDatabaseAdapter
 import com.tealcube.minecraft.bukkit.mythicdrops.items.MythicCustomItem
 import com.tealcube.minecraft.bukkit.mythicdrops.sendMythicMessage
 import com.tealcube.minecraft.bukkit.mythicdrops.stripColors
-import com.tealcube.minecraft.bukkit.mythicdrops.utils.AirUtil
 import org.bukkit.entity.Player
 
 @CommandAlias("mythicdrops|md")
@@ -55,7 +54,7 @@ internal class CustomCreateCommand : BaseCommand() {
     fun customItemsCommand(sender: Player, @Default("0") weight: Double) {
         val customCreateMessages = MythicDropsApi.mythicDrops.settingsManager.languageSettings.command.customCreate
         val itemInMainHand = sender.equipment?.itemInMainHand
-        if (itemInMainHand == null || AirUtil.isAir(itemInMainHand.type)) {
+        if (itemInMainHand == null || itemInMainHand.type.isAir) {
             sender.sendMythicMessage(
                 customCreateMessages.requiresItem
             )
